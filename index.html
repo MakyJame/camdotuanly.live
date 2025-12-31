@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cầm Đồ Tuấn Lý - Lãi Suất 5%/Tháng | 30 Năm Uy Tín</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">CẦM ĐỒ TUẤN LÝ</div>
+            <ul class="nav-links">
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#services">Dịch Vụ</a></li>
+                <li><a href="#calculator">Tính Lãi</a></li>
+                <li><a href="#process">Quy Trình</a></li>
+                <li><a href="#faq">Câu Hỏi</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Cầm Xe Máy với Lãi Suất Ưu đãi</h1>
+        <p>30 Năm Uy Tín - Giải Ngân Trong 30 Phút - Thủ Tục Đơn Giản</p>
+        <a href="#contact" class="cta-button">Tư Vấn Miễn Phí Ngay</a>
+    </section>
+
+    <!-- Why Us Section -->
+    <div class="container">
+        <h2 class="section-title">Tại Sao Chọn Chúng Tôi?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Lãi Suất Thấp Nhất</h3>
+                <p>Chỉ 5%/tháng - Rẻ nhất khu vực. Không phí ẩn, minh bạch 100%</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Giải Ngân Nhanh</h3>
+                <p>Chỉ 30 phút là có tiền ngay. Làm việc cả thứ 7, Chủ nhật</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>30 Năm Uy Tín</h3>
+                <p>Hoạt động từ 1995. Hàng nghìn khách hàng tin tưởng</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+                <h3>Thủ Tục Đơn Giản</h3>
+                <p>Chỉ cần CCCD + Giấy tờ xe. Không cần thế chấp, bảo lãnh</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Dịch Vụ Của Chúng Tôi</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>🏍️ Cầm Xe Máy</h3>
+                    <ul>
+                        <li>Cầm tất cả các loại xe máy</li>
+                        <li>Thẩm định giá trị nhanh chóng</li>
+                        <li>Không giữ xe - Vẫn sử dụng bình thường</li>
+                        <li>Giải ngân lên đến 80% giá trị xe</li>
+                        <li>Thời gian cầm linh hoạt</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>📄 Cầm Giấy Tờ Xe</h3>
+                    <ul>
+                        <li>Cầm cavet, đăng ký xe</li>
+                        <li>Giữ nguyên xe để sử dụng</li>
+                        <li>Thủ tục nhanh gọn</li>
+                        <li>Bảo mật thông tin tuyệt đối</li>
+                        <li>Trả góp linh hoạt theo tháng</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <div class="container" id="process">
+        <h2 class="section-title">Quy Trình 4 Bước Đơn Giản</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Liên Hệ</h3>
+                <p>Gọi hotline hoặc đến trực tiếp cửa hàng</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Thẩm Định</h3>
+                <p>Mang xe + giấy tờ đến để định giá</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Ký Hợp Đồng</h3>
+                <p>Thống nhất số tiền và ký hợp đồng rõ ràng</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Nhận Tiền</h3>
+                <p>Nhận tiền ngay lập tức sau khi ký</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <h2 class="section-title">Tính Toán Lãi Suất</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #666;">Nhập thông tin để tính toán số tiền bạn cần
+                trả</p>
+
+            <div class="calculator-container">
+                <div class="calculator-input">
+                    <div class="calc-form-group">
+                        <label for="loanAmount">💰 Số tiền cần vay (VNĐ)</label>
+                        <input type="text" id="loanAmount" placeholder="VD: 10000000" class="calc-input">
+                    </div>
+
+                    <div class="calc-form-group">
+                        <label for="loanMonths">📅 Số tháng vay</label>
+                        <input type="number" id="loanMonths" placeholder="VD: 6" min="1" class="calc-input">
+                    </div>
+
+                    <div class="calc-form-group">
+                        <label>📊 Lãi suất</label>
+                        <div class="interest-rate-display">5% / tháng</div>
+                    </div>
+
+                    <button class="calc-button" id="calculateBtn">
+                        <span>TÍNH TOÁN NGAY</span>
+                    </button>
+                </div>
+
+                <div class="calculator-result" id="calculatorResult">
+                    <h3>📈 KẾT QUẢ TÍNH TOÁN</h3>
+                    <div class="result-item">
+                        <span class="result-label">Tiền gốc:</span>
+                        <span class="result-value" id="resultPrincipal">0 đ</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Lãi mỗi tháng:</span>
+                        <span class="result-value" id="resultMonthlyInterest">0 đ</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Tổng lãi phải trả:</span>
+                        <span class="result-value highlight-result" id="resultTotalInterest">0 đ</span>
+                    </div>
+                    <div class="result-item total">
+                        <span class="result-label">💵 TỔNG PHẢI TRẢ:</span>
+                        <span class="result-value" id="resultTotal">0 đ</span>
+                    </div>
+                    <div class="result-note">
+                        * Đây là con số ước tính. Liên hệ để được tư vấn chi tiết hơn.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">So Sánh Lãi Suất</h2>
+            <div class="pricing-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Đơn Vị</th>
+                            <th>Lãi Suất/Tháng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cầm đồ thông thường</td>
+                            <td>8% - 10%</td>
+                        </tr>
+                        <tr>
+                            <td>Ngân hàng (tín chấp)</td>
+                            <td>2% - 2.5% (nhưng thủ tục phức tạp, thời gian lâu)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cầm Đồ Tuấn Lý</strong></td>
+                            <td><span class="highlight">5% - RẺ NHẤT</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Cầm xe được bao lâu?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Thời gian cầm linh hoạt theo nhu cầu của bạn. Có thể cầm 1 tháng, 3 tháng, 6 tháng hoặc lâu hơn.
+                        Bạn có thể trả trước hạn bất cứ lúc nào mà không mất phí.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Có giữ xe không?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Tùy vào hình thức cầm. Nếu cầm giấy tờ xe thì bạn vẫn giữ xe để sử dụng bình thường. Nếu cầm cả
+                        xe thì xe sẽ được gửi tại cửa hàng an toàn.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Cần giấy tờ gì?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Chỉ cần CMND/CCCD và giấy tờ xe (cavet, đăng ký). Không cần hộ khẩu, bảo lãnh hay thế chấp gì
+                        thêm.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Nếu quá hạn thì sao?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Bạn có thể gia hạn thêm hoặc trả một phần. Chúng tôi luôn trao đổi và hỗ trợ khách hàng một cách
+                        tốt nhất. Không ép buộc, không làm khó.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Có bảo mật thông tin không?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Hoàn toàn bảo mật. Thông tin khách hàng được giữ kín tuyệt đối. Chúng tôi có hợp đồng rõ ràng và
+                        cam kết bảo mật.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Liên Hệ Ngay Hôm Nay</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <div>
+                            <strong>Địa chỉ:</strong><br>
+                            10 DT743A, KP. Nội Hóa 2<br>
+                            P. Đông Hòa, TP. Dĩ An, Bình Dương
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📞</div>
+                        <div>
+                            <strong>Hotline:</strong><br>
+                            0274 3781 065<br>
+                            0789 606 413
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">⏰</div>
+                        <div>
+                            <strong>Giờ làm việc:</strong><br>
+                            Thứ 2 - Chủ nhật: 8:00 - 20:00
+                        </div>
+                    </div>
+
+                    <div class="contact-buttons">
+                        <a href="tel:0789606413" class="contact-action-btn btn-call">
+                            <span>📞</span>
+                            <span>GỌI NGAY</span>
+                        </a>
+                        <a href="https://wa.me/84789606413?text=Xin%20ch%C3%A0o%20C%E1%BA%A7m%20%C4%90%E1%BB%93%20Tu%E1%BA%A5n%20L%C3%BD!%20T%C3%B4i%20mu%E1%BB%91n%20t%C6%B0%20v%E1%BA%A5n%20v%E1%BB%81%20c%E1%BA%A7m%20xe%20m%C3%A1y."
+                            target="_blank" class="contact-action-btn btn-whatsapp">
+                            <span>💬</span>
+                            <span>CHAT WHATSAPP</span>
+                        </a>
+                        <a href="https://zalo.me/0789606413" target="_blank" class="contact-action-btn btn-zalo">
+                            <span>💙</span>
+                            <span>CHAT ZALO</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="success-message" id="successMessage">
+                        ✅ Đã gửi thông tin thành công! Chúng tôi sẽ liên hệ bạn sớm.
+                    </div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Họ và Tên *</label>
+                            <input type="text" id="name" required placeholder="Nguyễn Văn A">
+                        </div>
+                        <div class="form-group">
+                            <label>Số Điện Thoại *</label>
+                            <input type="tel" id="phone" required placeholder="0909 123 456">
+                        </div>
+                        <div class="form-group">
+                            <label>Số Tiền Cần Vay</label>
+                            <input type="text" id="amount" placeholder="VD: 10 triệu">
+                        </div>
+                        <div class="form-group">
+                            <label>Ghi Chú</label>
+                            <textarea id="message" rows="4"
+                                placeholder="Cho chúng tôi biết thêm về nhu cầu của bạn..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Gửi Thông Tin</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>CẦM ĐỒ TUẤN LÝ</h3>
+            <p>30 Năm Uy Tín - Lãi Suất Thấp Nhất - Giải Ngân Nhanh Nhất</p>
+            <p style="margin-top: 1rem; opacity: 0.7;">GPKD số: Đăng ký từ 2009 | Hoạt động từ 1995</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">&copy; 2024 Cầm Đồ Tuấn Lý. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <button class="chatbot-button" id="chatbotToggle">
+            <span class="chatbot-icon">💬</span>
+        </button>
+
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h4>🤖 Trợ Lý Tư Vấn</h4>
+                <button class="chatbot-close" id="chatbotClose">×</button>
+            </div>
+
+            <div class="chatbot-messages" id="chatbotMessages">
+                <!-- Messages will be added here by JavaScript -->
+            </div>
+
+            <div class="chatbot-input-area">
+                <div class="chatbot-input-container">
+                    <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Nhập câu hỏi...">
+                    <button class="chatbot-send-btn" id="chatbotSend">➤</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/84789606413?text=Xin%20ch%C3%A0o%20C%E1%BA%A7m%20%C4%90%E1%BB%93%20Tu%E1%BA%A5n%20L%C3%BD!%20T%C3%B4i%20mu%E1%BB%91n%20t%C6%B0%20v%E1%BA%A5n%20v%E1%BB%81%20c%E1%BA%A7m%20xe%20m%C3%A1y."
+            target="_blank" class="whatsapp-btn" title="Chat WhatsApp">
+            <span class="whatsapp-icon">📱</span>
+        </a>
+    </div>
+
+    <!-- Admin Toggle Button -->
+    <button class="admin-toggle" id="adminToggle">👤 Admin</button>
+
+    <!-- Admin Panel -->
+    <div class="admin-panel" id="adminPanel">
+        <div class="admin-header">
+            <h3>📊 Quản Lý Liên Hệ</h3>
+            <p style="margin: 0; font-size: 0.9rem; opacity: 0.9;">Danh sách khách hàng đã gửi form</p>
+            <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+                <button onclick="logoutAdmin()" class="admin-close">🚪 Đăng xuất</button>
+                <button class="admin-close" id="adminClose">✕ Đóng</button>
+            </div>
+        </div>
+
+        <!-- Admin Login Form -->
+        <div id="adminLogin" style="padding: 2rem; display: none;">
+            <h4 style="margin-bottom: 1rem;">🔐 Đăng Nhập Admin</h4>
+
+            <input type="email" id="adminEmail" placeholder="Email..."
+                style="width: 100%; padding: 0.8rem; border: 2px solid #e0e0e0; border-radius: 8px; margin-bottom: 1rem;">
+
+            <input type="password" id="adminPassword" placeholder="Mật khẩu..."
+                style="width: 100%; padding: 0.8rem; border: 2px solid #e0e0e0; border-radius: 8px; margin-bottom: 1rem;">
+
+            <button onclick="loginWithFirebaseAuth()"
+                style="width: 100%; padding: 0.8rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+                Đăng Nhập
+            </button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: #999;">
+                💡 Sử dụng email/password đã tạo trong Firebase Authentication
+            </p>
+        </div>
+
+        <div class="contact-list" id="contactList">
+            <div class="empty-state">
+                <p>📭 Chưa có liên hệ nào</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html>
